@@ -156,13 +156,17 @@
               neighbouring farmer and cat-fancier.
             </p>
           </div>
-          <a class="more-info-button">More Info</a>
+          <button class="more-info-button" type="button">More Info</button>
         </div>
         <div class="popup-section-container">
           <div class="popup-section">
             <div class="space-between-distributed-row-container">
               <h3>Origin</h3>
-              <button class="close-popup-button">
+              <button
+                class="close-popup-button"
+                aria-label="close popup window"
+                title="close popup window"
+              >
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -199,13 +203,17 @@
               deafness.
             </p>
           </div>
-          <a class="more-info-button">More Info</a>
+          <button class="more-info-button" type="button">More Info</button>
         </div>
         <div class="popup-section-container">
           <div class="popup-section">
             <div class="space-between-distributed-row-container">
               <h3>Acceptance</h3>
-              <button class="close-popup-button">
+              <button
+                class="close-popup-button"
+                aria-label="close popup window"
+                title="close popup window"
+              >
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -236,7 +244,7 @@
               considerably more than kittens of more common breeds
             </p>
           </div>
-          <a class="more-info-button">More Info</a>
+          <button class="more-info-button" type="button">More Info</button>
         </div>
         <div class="popup-section-container">
           <div class="popup-section">
@@ -369,7 +377,7 @@
       <h1>Cat Facts</h1>
       <div class="loading-container"></div>
       <div id="cat-facts-list"></div>
-      <a class="reload-cat-facts">Load New Cats Facts</a>
+      <button class="reload-cat-facts" type="button">Load New Cat Facts</button>
     </div>
 
     <div class="dark-background-container">
@@ -379,19 +387,12 @@
           class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
         >
           <p class="label-input-group form-element-container">
-            <span class="form-label">Name</span>
-            <input
-              aria-label="name"
-              class="form-input-box"
-              type="text"
-              id="name"
-              name="name"
-            />
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input-box" type="text" id="name" name="name" />
           </p>
           <p class="label-input-group form-element-container">
-            <span class="form-label">Username</span>
+            <label class="form-label" for="username">Username</label>
             <input
-              aria-label="username"
               class="form-input-box"
               type="text"
               id="username"
@@ -403,9 +404,8 @@
           class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
         >
           <p class="label-input-group form-element-container">
-            <span class="form-label">Email</span>
+            <label class="form-label" for="email">Email</label>
             <input
-              aria-label="email"
               class="form-input-box"
               type="email"
               id="email"
@@ -413,9 +413,8 @@
             />
           </p>
           <p class="label-input-group form-element-container">
-            <span class="form-label">Phone Number</span>
+            <label class="form-label" for="phone-number">Phone Number</label>
             <input
-              aria-label="phone"
               class="form-input-box"
               type="tel"
               id="phone-number"
@@ -423,8 +422,10 @@
             />
           </p>
         </div>
-        <div class="form-fieldset form-element-container">
-          <p class="form-label">What breeds would you like to learn?</p>
+        <fieldset class="form-fieldset form-element-container">
+          <legend class="form-label">
+            What breeds would you like to learn?
+          </legend>
           <div>
             <input type="checkbox" id="siamese" name="breed1" value="siamese" />
             <label for="siamese">Siamese Cat</label>
@@ -478,7 +479,7 @@
             />
             <label for="american-shorthair">American Shorthair</label>
           </div>
-        </div>
+        </fieldset>
         <label class="form-label" for="message"
           >Feel free to leave a message to us</label
         >
@@ -489,13 +490,13 @@
           cols="30"
           rows="10"
         ></textarea>
+        <div
+          class="space-evenly-distributed-row-container form-buttons-container"
+        >
+          <input class="form-button" type="submit" value="submit" />
+          <input class="form-button" type="reset" value="reset" />
+        </div>
       </form>
-      <div
-        class="form space-evenly-distributed-row-container form-buttons-container"
-      >
-        <input class="form-button" type="submit" value="submit" />
-        <input class="form-button" type="reset" value="reset" />
-      </div>
     </div>
 
     <footer class="footer">
