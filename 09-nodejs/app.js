@@ -47,7 +47,7 @@ const server = http.createServer((req, res) => {
     <p>Email: ${email}</p>
   </main>
 </body>
-</html>
+</html> 
 `);
 
       res.end();
